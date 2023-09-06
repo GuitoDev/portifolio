@@ -1,0 +1,42 @@
+.home {
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+.homeOla {
+  text-align: left;
+  font-size: 60px;
+}
+.homeNome {
+  font-size: 60px;
+  margin-top: -40px;
+  position: fixed;
+}
+.typing-animation {
+  font-size: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.white-text {
+  color: white;
+}
+.homeProfisao {
+  margin-top: 100px;
+}
+.homeProfissaoSpan {
+  color: #07bfe0;
+}
+.homeButtons a{
+    background-color: none;
+}
+.homeButtons{
+    background-color: blue;
+    width: 80px;
+    height: 80px;
+}
+.homeButtons:hover{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    
+}

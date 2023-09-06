@@ -1,0 +1,40 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #354656; /* Cor de fundo do Navbar */
+  height: 50px;
+  border-radius: 50px;
+  width: 90%;
+  position: fixed;
+  z-index: 1000;
+  margin-left: 70px;
+}
+
+.logo img {
+  max-width: 50px; /* Ajuste o tamanho da sua logo conforme necessário */
+  padding-left: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  
+}
+
+.nav-links li {
+  padding-right: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white; /* Cor dos links */
+ 
+}
+.nav-links a:hover {
+  color: #07bfe0;
+  border-bottom: 4px solid #07bfe0;
+  padding-bottom: 10px;
+  transition: color 0.3s, border-bottom 0.3s; /* Efeito de transição suave */
+}
+
