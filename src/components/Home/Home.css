@@ -10,7 +10,6 @@
 .homeNome {
   font-size: 60px;
   margin-top: -40px;
-  position: fixed;
 }
 .typing-animation {
   font-size: 24px;
@@ -20,23 +19,106 @@
 .white-text {
   color: white;
 }
-.homeProfisao {
-  margin-top: 100px;
-}
 .homeProfissaoSpan {
   color: #07bfe0;
 }
-.homeButtons a{
-    background-color: none;
+.homeButtons a {
+  display: flex;
 }
-.homeButtons{
-    background-color: blue;
-    width: 80px;
-    height: 80px;
+.homeButtons {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #07bfe0;
+  align-items: center;
 }
-.homeButtons:hover{
-    background-color: red;
-    width: 80px;
-    height: 80px;
-    
+.homeButtons:hover {
+  background-color: red;
+}
+
+/*Redes*/
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-image: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #ff7a59,
+    #ff9a8b,
+    #ffb9d3
+  );
+  transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #424c50;
+  transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #1049c2;
+  transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #14c76d;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 22px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

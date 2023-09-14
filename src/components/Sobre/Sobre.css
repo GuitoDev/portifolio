@@ -1,0 +1,9 @@
+.sobreGeral{
+    border: 1px solid red;
+    width: 100%;
+    padding-top: 150px;
+}
+.sobreDrum{
+    width: 400px;
+    height: 300px;
+}
