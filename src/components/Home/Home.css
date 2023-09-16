@@ -1,7 +1,8 @@
 .home {
+  height: 500em;
   text-align: left;
-  padding-top: 100px;
-  padding-left: 50px;
+  padding-top: 5em;
+  padding-left: 3em;
 }
 .homeOla {
   text-align: left;
@@ -10,6 +11,7 @@
 .homeNome {
   font-size: 60px;
   margin-top: -40px;
+  text-align: left;
 }
 .typing-animation {
   font-size: 24px;
@@ -22,6 +24,9 @@
 .homeProfissaoSpan {
   color: #07bfe0;
 }
+
+/* Home Botoes */
+
 .homeButtons a {
   display: flex;
 }
@@ -39,6 +44,7 @@
 /*Redes*/
 
 .card {
+  margin-top: -50px;
   width: fit-content;
   height: fit-content;
   background-color: transparent;
@@ -49,7 +55,6 @@
   gap: 20px;
 }
 
-/* for all social containers*/
 .socialContainer {
   width: 70px;
   height: 70px;
@@ -78,7 +83,7 @@
   );
   transition-duration: 0.3s;
 }
-/* twitter*/
+/* Github */
 .containerTwo:hover {
   background-color: #424c50;
   transition-duration: 0.3s;
@@ -93,7 +98,11 @@
   background-color: #14c76d;
   transition-duration: 0.3s;
 }
-
+/* Email */
+.containerFive:hover {
+  background-color: #af0303;
+  transition-duration: 0.3s;
+}
 .socialContainer:active {
   transform: scale(0.9);
   transition-duration: 0.3s;
@@ -111,6 +120,8 @@
   animation: slide-in-top 0.3s both;
 }
 
+/* All Key Frames */
+
 @keyframes slide-in-top {
   0% {
     transform: translateY(-50px);
@@ -121,4 +132,18 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* Estilos para telas menores que 768px (Celular) */
+@media screen and (max-width: 767px) {
+  
+}
+
+/* Estilos para telas entre 768px e 1023px (Tablet) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+/* Estilos para telas a partir de 1024px (Desktop) */
+@media screen and (min-width: 1024px) {
+
 }
