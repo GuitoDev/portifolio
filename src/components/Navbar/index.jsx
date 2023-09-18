@@ -1,47 +1,55 @@
 import "./Navbar.css";
 import "animate.css";
+import { useState } from "react";
 
 function Navbar() {
+  const [isActive, setIsActive] = useState(false);
+  const toggleMenu = () => {
+    setIsActive(!isActive);
+  };
+  
   return (
     <>
-      {/* Navbar Desktop*/}
       <header>
-        <nav className="navbar animate__animated animate__fadeInDown">
+        <nav className={`navbar animate__animated animate__fadeInDown`}>
           <div className="logo">
             <a href="/">
-              <img
-                src="public\images\logo.png"
-                alt="Logo"
-                width={70}
-                height={70}
-              />
+              <img src="public/images/logo.png" alt="Logo" />
             </a>
           </div>
-          <ul className="nav-links">
-            <li>
-              <a href="/">Home</a>
+          <ul className={`nav-menu ${isActive ? "active" : ""}`}>
+            <li className="nav-item">
+              <a className="nav-links" href="/">
+                Home
+              </a>
             </li>
-            <li>
-              <a href="#">Sobre</a>
+            <li className="nav-item">
+              <a className="nav-links" href="#">
+                Sobre
+              </a>
             </li>
-            <li>
-              <a href="#">Projetos</a>
+            <li className="nav-item">
+              <a className="nav-links" href="#">
+                Projetos
+              </a>
             </li>
-            <li>
-              <a href="#">Contato</a>
+            <li className="nav-item">
+              <a className="nav-links" href="#">
+                Contato
+              </a>
             </li>
           </ul>
-
-          <label className="switch">
-            <input type="checkbox" />
-            <span className="slider"></span>
-          </label>
+          <div
+            className={`burger ${isActive ? "active" : ""}`}
+            onClick={toggleMenu}
+          >
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
         </nav>
-
-        {/* Versao Mobile */}
       </header>
     </>
   );
 }
-
 export default Navbar;
