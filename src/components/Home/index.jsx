@@ -176,7 +176,7 @@ function Home() {
             />
             <br />
             <br />
-            <button className="sobreBtn"><a  className="sobreBtn1" href="public\images\cv-gui.pdf" target="_blank">Download CV</a></button>
+            <button className="sobreBtn"><a  className="sobreBtn1" href="https://drive.google.com/file/d/1SVxynS0eG9VqS3C7XcnPJ6WDNPkoy7pS/view?usp=sharing" target="_blank" rel="noreferrer">Download CV</a></button>
           </div>
         </section>
 

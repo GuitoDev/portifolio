@@ -5,7 +5,7 @@ function Footer() {
     <>
     <footer className="footer">
             <img className="logoFooter" src="public\images\logo.png"  alt="Logo" />
-            <p className="textFooter">© 2022 Chakra Templates. All rights reserved</p>
+            <p className="textFooter">© 2022 Guilherme Alves. Desenvolvedor Front-end</p>
         <div className="footerIcons">
             <a
               className="socialContainer containerOne"
