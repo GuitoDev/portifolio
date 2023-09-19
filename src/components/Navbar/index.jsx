@@ -14,7 +14,7 @@ function Navbar() {
         <nav className={`navbar animate__animated animate__fadeInDown`}>
           <div className="logo">
             <a href="/">
-              <img src="https://imgur.com/MldCmf7" alt="Logo" />
+              <img src="https://i.imgur.com/MldCmf7.png" alt="Logo" />
             </a>
           </div>
           <ul className={`nav-menu ${isActive ? "active" : ""}`}>
