@@ -1,0 +1,36 @@
+.footer {
+  background-color: #354656;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  color: #fff;
+  height: 20%;
+  align-items: center;
+}
+.textFooter {
+  margin-left: 1-0%;
+}
+.logoFooter {
+  width: 60px;
+  height: 60px;
+}
+.footerIcons {
+  display: flex;
+}
+/* Estilos para telas menores que 768px (Celular) */
+@media screen and (max-width: 767px) {
+  .logoFooter {
+    width: 60px;
+    height: 60px;
+  }
+  .textFooter {
+    display: none;
+  }
+}
+
+/* Estilos para telas entre 768px e 1023px (Tablet) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+/* Estilos para telas a partir de 1024px (Desktop) */
+@media screen and (min-width: 1024px) {
+}

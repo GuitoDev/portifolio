@@ -1,14 +1,18 @@
 import { useState, useEffect } from "react";
 import "./Home.css";
+import "./Sobre.css";
+import "./Projetos.css";
 import "animate.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { AiFillInstagram } from "react-icons/ai";
 
 const palavras = [
-  { texto: "Desenvolvedor", cor: "#07BFE0" },
+  { texto: "Desenvolvedor", cor: "#d9d9d9" },
   { texto: "Designer", cor: "#FF7F50" },
   { texto: "Músico", cor: "#32CD32" },
   { texto: "Criativo", cor: "#FFD700" },
+  { texto: "Comunicativo", cor: "#afffff" },
+  { texto: "Focado", cor: "#07bfe0" },
 ];
 
 function Home() {
@@ -29,7 +33,8 @@ function Home() {
 
   return (
     <>
-      <div className="home animate__animated animate__fadeInLeft">
+      {/* Home */}
+      <section className="home animate__animated animate__fadeInLeft">
         <div>
           <div className="typing-animation">
             <span className="white-text">
@@ -52,7 +57,6 @@ function Home() {
           </p>
           <br />
           <br />
-
           <div className="card">
             <a
               className="socialContainer containerOne"
@@ -103,31 +107,157 @@ function Home() {
           </div>
         </div>
 
-{/* Sobre */}
-<br />
-<div>
-<h3 className="sobre">Sobre</h3>
-<h1 className="comeco">Como tudo começou</h1>
-<div className="sobreTxt">
-  <p>Minha trajetória na área de tecnologia</p>
-  <p>começou aos 12 anos, quando escrevi</p>
-  <p>meu primeiro Hello World em Java.</p>
-  <p> Desde então, me encantei com o </p>
-  <p>desenvolvimento de software. Alem de</p>
-  <p>musico eu já trabalhei como UI </p>
-  <p>Designer, criando interfaces bonitas.</p>
-  <p>Atualmente, sou desenvolvedor Frontend</p>
-  <p>e trabalho como freelancer há 2 anos.</p>
-</div>
-<div className="sobreDivImg">
-<img className="sobreImg" src="public\images\photo git (1).jpeg" alt="Descrição da imagem" />
-</div>
-</div>
-<br />
-<button className="sobreBtn download">
-    Donwload CV
-</button>
-      </div>
+        {/* Sobre */}
+        <section className="sobre">
+          <h3 className="pages">Sobre</h3>
+          <h1 className="titulo">Como tudo começou</h1>
+          <div className="sobreTxt">
+            <p>Minha trajetória na área de tecnologia</p>
+            <p>começou aos 12 anos, quando escrevi</p>
+            <p>meu primeiro Hello World em Java.</p>
+            <p> Desde então, me encantei com o </p>
+            <p>desenvolvimento de software. Alem de</p>
+            <p>musico eu já trabalhei como UI </p>
+            <p>Designer, criando interfaces bonitas.</p>
+            <p>Atualmente, sou desenvolvedor Frontend</p>
+            <p>e trabalho como freelancer há 2 anos.</p>
+            <br />
+            <h3 className="pages skills">Hard Skills</h3>
+            <div className="sobreDivLogos">
+              <img
+                className="sobreLogos"
+                width="50"
+                height="50"
+                src="https://img.icons8.com/color/48/javascript--v1.png"
+                alt="javascript--v1"
+              />
+              <img
+                className="sobreLogos"
+                width="50"
+                height="50"
+                src="https://img.icons8.com/plasticine/100/react.png"
+                alt="react"
+              />
+              <img
+                className="sobreLogos"
+                width="50"
+                height="50"
+                src="https://img.icons8.com/fluency/48/typescript--v1.png"
+                alt="typescript--v1"
+              />
+              <img
+                className="sobreLogos"
+                width="50"
+                height="50"
+                src="https://img.icons8.com/color-glass/48/bootstrap.png"
+                alt="bootstrap"
+              />
+              <img
+                className="sobreLogos"
+                width="50"
+                height="50"
+                src="https://img.icons8.com/color/48/figma--v1.png"
+                alt="figma--v1"
+              />
+              <img
+                className="sobreLogos"
+                width="50"
+                height="50"
+                src="https://img.icons8.com/fluency/48/000000/node-js.png"
+                alt="node-js"
+              />
+            </div>
+          </div>
+          <div className="sobreDivImg">
+            <img
+              className="sobreImg"
+              src="public\images\photo git (1).jpeg"
+              alt="Descrição da imagem"
+            />
+            <br />
+            <br />
+            <button className="sobreBtn"><a  className="sobreBtn1" href="public\images\cv-gui.pdf" target="_blank">Download CV</a></button>
+          </div>
+        </section>
+
+        {/* Projetos */}
+        <section className="expe">
+          <h3 className="pages">Projetos</h3>
+          <h1 className="titulo">Meu Protifólio</h1>
+
+          <div className="Album">
+            <div className="projDivAlbum">
+              <img
+                className="projImg"
+                src="public\images\machuPicchu.webp"
+                alt="Descrição da imagem"
+              />
+              <div className="projDescricao">
+                <p>Descrição da Foto</p>
+                <a
+                  className="projBotao"
+                  href="link-da-foto.html"
+                  target="_blank"
+                >
+                  Ver Foto
+                </a>
+              </div>
+            </div>
+            <div className="projDivAlbum">
+              <img
+                className="projImg"
+                src="public\images\motorv8.webp"
+                alt="Descrição da imagem"
+              />
+              <div className="projDescricao">
+                <p>Descrição da Foto</p>
+                <a
+                  className="projBotao"
+                  href="link-da-foto.html"
+                  target="_blank"
+                >
+                  Ver Foto
+                </a>
+              </div>
+            </div>
+            <div className="projDivAlbum">
+              <img
+                className="projImg"
+                src="public\images\cinego.webp"
+                alt="Descrição da imagem"
+              />
+              <div className="projDescricao">
+                <p>Descrição da Foto</p>
+                <a
+                  className="projBotao"
+                  href="link-da-foto.html"
+                  target="_blank"
+                >
+                  Ver Foto
+                </a>
+              </div>
+            </div>
+            <div className="projDivAlbum lastFoto">
+              <img
+                className="projImg"
+                src="public\images\codecafe.webp"
+                alt="Descrição da imagem"
+              />
+              <div className="projDescricao">
+                <p>Descrição da Foto</p>
+                <a
+                  className="projBotao"
+                  href="link-da-foto.html"
+                  target="_blank"
+                >
+                  Ver Foto
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Section geral */}
+      </section>
     </>
   );
 }

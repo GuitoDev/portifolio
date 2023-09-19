@@ -1,0 +1,82 @@
+/*Projetos*/
+.expe {
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 5% 0 0;
+  background-color: #354656;
+ margin-top: 10%;
+ border-radius: 20px;
+}
+.Album{
+ text-align: center;
+ justify-content: center;
+ text-align: center;
+}
+.lastFoto{
+  padding-bottom: 10%;
+}
+.projDivAlbum{
+  position: relative;
+  display: inline-block;
+}
+
+.projImg {
+  width: 400px;
+  height: 500px;
+  transition: filter 0.3s;
+}
+
+/* Efeito de hover */
+.projDivAlbum:hover .projImg {
+  filter: brightness(70%); /* Reduz a luminosidade da imagem */
+}
+
+/* Estilização da descrição */
+.projDescricao {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center;
+}
+
+/* Efeito de hover para mostrar a descrição */
+.projDivAlbum:hover .projDescricao {
+  opacity: 1;
+}
+
+/* Estilização do botão */
+.projBotao {
+  display: inline-block;
+  background-color: #0074d9;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 10px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Estilos para telas menores que 768px (Celular) */
+@media screen and (max-width: 767px) {
+  .expe {
+   width: 100%;
+   margin-top: 20%;
+  }
+  .projImg {
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+  }
+}
+
+/* Estilos para telas entre 768px e 1023px (Tablet) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+/* Estilos para telas a partir de 1024px (Desktop) */
+@media screen and (min-width: 1024px) {
+}

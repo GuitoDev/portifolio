@@ -1,6 +1,6 @@
 /* ---- Home ----*/
 .home {
-  height: 500em;
+  height: 100%;
   text-align: left;
   padding-top: 5em;
   margin-left: 5%;
@@ -22,7 +22,7 @@
   white-space: nowrap;
 }
 .white-text {
-  color: white;
+  color: #d9d9d9;
 }
 .homeProfissaoSpan {
   color: #07bfe0;
@@ -116,83 +116,11 @@
 }
 
 .socialSvg path {
-  fill: rgb(255, 255, 255);
+  fill: #d9d9d9;
 }
 
 .socialContainer:hover .socialSvg {
   animation: slide-in-top 0.3s both;
-}
-
-/* ---- Sobre ----*/
-.sobre{
-  color: #07bfe0;
-  text-align: center;
-}
-.comeco{
-  text-align: center;
-}
-.sobreTxt{
-  margin-left: 60%;
-}
-.sobreDivImg {
-  display: inline-block; /* Isso ajuda a manter o container do tamanho da imagem */
-  position: relative;
-}
-.sobreImg {
-  width: 300px; /* Largura da imagem */
-  height: 200px; /* Altura da imagem */
-  border: 1px solid #ccc; /* Borda para destacar a imagem */
-  transition: transform 0.3s ease; /* Efeito de transição suave para hover */
-}
-
-/* Efeito de escala no hover */
-.sobreImg:hover {
-  transform: scale(1.1); /* Aumenta a imagem em 10% */
-}
-
-/* Efeito de sombreamento na borda ao passar o mouse */
-.sobreImg:hover {
-  box-shadow: 0 0 10px rgba(252, 250, 250, 0.973);
-}
-.sobreBtn {
-  margin-left: 1%;
-  padding: 1em;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #2c9caf;
-  transition: all 1000ms;
-  font-size: 15px;
-  position: relative;
-  overflow: hidden;
-  outline: 2px solid #2c9caf;
-  gap: 10px;
-}
-
-.sobreBtn:hover {
-  color: #ffffff;
-  transform: scale(1.1);
-  outline: 2px solid #70bdca;
-  box-shadow: 4px 5px 17px -4px #268391;
-}
-
-.sobreBtn::before {
-  content: "";
-  position: absolute;
-  left: -50px;
-  top: 0;
-  width: 0;
-  height: 100%;
-  background-color: #2c9caf;
-  transform: skewX(45deg);
-  z-index: -1;
-  transition: width 1000ms;
-}
-
-.sobreBtn:hover::before {
-  width: 250%;
 }
 
 /* All Key Frames */
@@ -213,7 +141,6 @@
 @media screen and (max-width: 767px) {
   .home {
     width: 90%;
-    border: 2px solid red;
   }
   .homeOla {
     font-size: 30px;

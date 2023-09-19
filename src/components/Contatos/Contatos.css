@@ -1,0 +1,65 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0D1F2D;
+  color: #FFF;
+  padding: 14px;
+}
+.form{
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  background-color: #354656;
+  margin-bottom: 14px;
+  height: 34px;
+  border-radius: 4px;
+  border: 0;
+  padding: 0 8px;
+}
+
+.textarea{
+  background-color: #354656;
+  margin-bottom: 14px;
+  border-radius: 4px;
+  border: 0;
+  padding: 10px;
+  height: 94px;
+  resize: none;
+}
+
+.cttbutton{
+  margin-bottom: 10%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px #0fdbff solid;
+  cursor: pointer;
+  background-color: #0D1F2D;
+  font-size: 20px;
+  transition: background-color, transform 0.8s;
+}
+
+.cttbutton:hover{
+  color: #0fdbff;
+  background-color: #354656;
+  transform: scale(1.05);
+}
+/* Estilos para telas menores que 768px (Celular) */
+@media screen and (max-width: 767px) {
+}
+
+/* Estilos para telas entre 768px e 1023px (Tablet) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+/* Estilos para telas a partir de 1024px (Desktop) */
+@media screen and (min-width: 1024px) {
+}
