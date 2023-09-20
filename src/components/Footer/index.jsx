@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
     <footer className="footer">
-            <img className="logoFooter" src="public\images\logo.png"  alt="Logo" />
+            <img className="logoFooter" src="https://i.imgur.com/MldCmf7.png"  alt="Logo" />
             <p className="textFooter">© 2022 Guilherme Alves. Desenvolvedor Front-end</p>
         <div className="footerIcons">
             <a

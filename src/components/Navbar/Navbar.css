@@ -1,4 +1,14 @@
-.navbar {
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  margin-right: 1vw;
+}
+.nav {
   justify-content: space-between;
   align-items: center;
   background-color: #354656;
@@ -15,83 +25,66 @@
   border: 1px solid #07bfe0;
 }
 .logo img {
-  padding-left: 80px;
+  text-align: right;
+  padding: 55%;
   width: 60px;
   height: 60px;
 }
-li {
-  list-style: none;
-}
-.nav-links {
-  text-decoration: none;
-  color: #07bfe0;
-  font-weight: bolder;
-}
-.nav-links:hover {
-  border-bottom: 2px solid #07bfe0;
-  padding-bottom: 15px;
-  transition: 0.3s;
-}
-.nav-menu {
+.nav__menu {
   display: flex;
-  align-items: center;
-  gap: 50px;
-  padding-right: 5%;
+  padding: 2rem 2rem 2rem 2rem;
+  gap: 1rem;
 }
-.burger {
+.nav__toggler {
   display: none;
-  cursor: pointer;
-  margin-right: 100%;
 }
-.bar {
+.ham {
   display: block;
-  width: 20px;
+  width: 5vw;
   height: 3px;
   border-radius: 2px;
   margin: 5px auto;
   background-color: #d9d9d9;
-  transition: all 0.3s ease ease-in-out;
+  margin-right: 10vw;
 }
-/* Estilos para telas menores que 768px (Celular) */
-@media screen and (max-width: 767px) {
-  .burger {
+.nav__item{
+  padding-right: 5vw;
+}
+.nav__link:hover {
+  border-bottom: 2px solid #07bfe0;
+  padding-bottom: 15px;
+  transition: 0.3s;
+  color: #07bfe0;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .nav__toggler {
     display: block;
-    margin-right: 10%;
+    cursor: pointer;
   }
-  .burger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .burger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .burger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .nav-menu {
-    display: block; /*!!!!!!! tira isso quando souber quando resolver, navbar*/
-    margin-top: 70%;
-    gap: 0;
-    border-radius: 0 0 20px 20px;
-    background-color: #354656;
+  .nav__menu {
+    position: fixed;
+    top: 10vh;
+    left: 50vw;
+    right: -1vw;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    background: #354656;
     flex-direction: column;
-    width: 100px;
-    transition: 0.3s;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    padding-right: 1px;
   }
-  .nav-item {
-    margin: 16px 0;
-  }
-  .nav-menu.active {
-    left: 0;
-  }
-  .logo {
-    margin-left: -15%;
+  .nav__link:hover {
+   background-color: #9fa1a1;
+   color: #354656;
+   padding:  1rem 2rem 1rem 2rem ;
+   width: 90%;
+   border-radius: 10px;
+   border-bottom: none;
   }
 }
-
-/* Estilos para telas entre 768px e 1023px (Tablet) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-}
-/* Estilos para telas a partir de 1024px (Desktop) */
-@media screen and (min-width: 1024px) {
+/* Active Class */
+.nav__active {
+  transform: translateX(0%);
 }
