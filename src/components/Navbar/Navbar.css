@@ -64,7 +64,7 @@ ul {
   }
   .nav__menu {
     position: fixed;
-    top: 10vh;
+    top: 15vh;
     left: 50vw;
     right: -1vw;
     border-top-left-radius:20px;
