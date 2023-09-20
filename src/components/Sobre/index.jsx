@@ -76,7 +76,7 @@ function Sobre() {
           <button className="sobreBtn">
             <a
               className="sobreBtn1"
-              href="https://drive.google.com/file/d/1SVxynS0eG9VqS3C7XcnPJ6WDNPkoy7pS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Un9kLuEBbYM5DRoa0CWMh3CxpOvanq2V/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
